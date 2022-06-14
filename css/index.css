@@ -1,0 +1,48 @@
+#imgWrap {
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+    font-size: 0;
+    /* 解决图片之间的空隙 */
+    /* perspective: 800px; */
+}
+
+#imgWrap img {
+    width: 150px;
+    height: 100px;
+}
+
+#btn {
+    width: 140px;
+    height: 40px;
+    margin: 250px 800px;
+    background: rgb(0, 100, 0);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000;
+    /* 阴影x轴y轴2px 阴影半径5px  */
+    cursor: pointer;
+    /* 鼠标形状手的形状 */
+}
+
+
+/* 关键帧动画 */
+
+@keyframes twinkle {
+    6% {
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        /* transform: scale(1); */
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg) translateZ(0);
+        /* transform: scale(1); */
+    }
+}
